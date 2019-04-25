@@ -9,13 +9,15 @@ Vue.component("simple_comp", {
       message: "I don't have props. yet"
     };
   },
-  props: [],
+  props: ["prop"],
   methods: {}
 });
 
 const vm = new Vue({
   el: "#app",
-  data: {},
+  data: {
+    vue_data: "this is a prop"
+  },
   /* Local component */
   components: {
     nw_comp: {

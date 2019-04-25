@@ -27,7 +27,7 @@
 
 <body>
 	<div id="app">
-		<simple_comp></simple_comp>
+		<simple_comp :prop="vue_data"></simple_comp>
 		<nw_comp></nw_comp>
 	</div>
 
@@ -35,6 +35,7 @@
 		<div class="comp_root">
 			<h1>This is component</h1>
 			<h3>{{ message }}</h3>
+			<p>{{ prop }}</p>
 		</div>
 	</template>
 
