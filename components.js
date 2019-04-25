@@ -6,7 +6,7 @@ Vue.component("simple_comp", {
   template: "#temp",
   data() {
     return {
-      message: "I don't have props. yet"
+      message: "I don't have props. yet" + " " + this.prop
     };
   },
   props: ["prop"],
@@ -16,7 +16,7 @@ Vue.component("simple_comp", {
 const vm = new Vue({
   el: "#app",
   data: {
-    vue_data: "this is a prop"
+    vue_data: "but now i do!!"
   },
   /* Local component */
   components: {
