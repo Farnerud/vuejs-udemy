@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Components | VueJS</title>
+	<style>
+		.comp_root {
+			background: #deffaa;
+			color: #27143a;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.comp_root_2 {
+			background: linear-gradient(90deg, #076db1, rgb(79, 43, 209));
+			color: #e0e0e0;
+			font-weight: bold;
+			padding: 10px;
+			font-size: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="app">
+		<simple_comp></simple_comp>
+		<nw_comp></nw_comp>
+	</div>
+
+	<template id="temp">
+		<div class="comp_root">
+			<h1>This is component</h1>
+			<h3>{{ message }}</h3>
+		</div>
+	</template>
+
+	<template id="temp2">
+		<div class="comp_root_2">
+			<p>{{ msg }}</p>
+		</div>
+	</template>
+
+	<script src="vue.js"></script>
+	<script src="components.js"></script>
+</body>
+
+</html>

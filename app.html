@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cars Comparative App</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="app" class="wrapper">
+		<header class="main-header">
+			<div class="container">
+				<h1 class="main-title">Car Models</h1>
+				<h3 class="main-description">This site shows you the best cars for the <span>2019</span></h3>
+			</div>
+		</header>
+		<section class="main-content">
+			<div class="container cards-wrapper">
+				<div class="card" v-for="card in cards_info">
+					<div class="card-image">
+						<img v-bind:src="card.url" alt="Cars">
+					</div>
+					<div class="card-content">
+						<h2 class="card-title">{{ card.title }}</h2>
+						<p class="card-description">{{ card.content }}</p>
+						<p class="card-description" v-show="knowMore">{{ card.moreContent }}</p>
+						<button class="btn-card" @click="knowMore = !knowMore">Did you know?</button>
+						<h4 class="card-category">{{ card.category }}</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
