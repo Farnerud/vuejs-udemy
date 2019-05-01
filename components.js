@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 
-/* Global coomponent */
+/* Global component */
 Vue.component("simple_comp", {
   template: "#temp",
   data() {
